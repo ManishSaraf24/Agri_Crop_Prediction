@@ -1,24 +1,30 @@
 # Agriculture Crop Prediction
 
 This project aims to predict agricultural crop yields using machine learning algorithms,
-specifically an Artificial Neural Network (ANN) model. The goal is to provide farmers with accurate predictions of crop yields,
-which can help them make informed decisions regarding planting, harvesting, and resource allocation.
+specifically an Artificial Neural Network (ANN) model. The goal is to provide farmers with accurate predictions of crop to produce,
+which is suitable for thier environmental conditions.
 
 ## Dataset
 
 The dataset used for this project consists of historical agricultural data,
-including information such as weather conditions, soil characteristics, fertilizer usage, and
-crop yields. Each data entry represents a specific combination of these factors for a particular crop.
+including information such as temperature, soil pH, humidity , Nitrogen , Phosphourus , Pottassium  and Rainfall. Each data entry represents a specific combination of these factors for a particular crop. There is a large data containing of various crops such rice , banana , grapes , apple , mothbeans etc.
+
+## Methodology
+We took dataset as mentioned above and applied machine learning algorithms on it such random forest, decision tree , K-means clustering and KNN etc.to check accuracy of models and to choose best fit model for prediction.After getting highest accuracy of random forest we just applied it on our dataset ,we split dataset into two parts train and test.We got 99.7 accuracy for random forest so we moved with it and trained our model accordingly. It predicts accurate results now on giving input of temperature , pH , nitrogen , phosphorous , rainfall , humidity etc .
+
 
 ## Dependencies
 
 To run this project, you will need the following dependencies:
 
-- Python 3.x
+- Python
 - NumPy
 - Pandas
 - Scikit-learn
-- Keras (with TensorFlow backend)
+- ANN 
+- Random Forest Classifier
+- Streamlit (GUI)
+- few algorithms like decision tree,K-means clustering, KNN etc to check accuracy 
 
 ## Installation
 
@@ -76,7 +82,7 @@ The `config.py` file contains various configurations that can be customized:
 - `activation`: The activation function used in the hidden layers of the ANN model.
 - `output_activation`: The activation function used in the output layer of the ANN model.
 
-Feel free to modify these configurations based on your specific requirements.
+
 
 ## Contributing
 
